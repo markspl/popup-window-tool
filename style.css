@@ -1,0 +1,224 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+.style-light{
+    background: repeating-linear-gradient(
+        45deg,
+        #246E89,
+        #246E89 10px,
+        #388FA3 10px,
+        #388FA3 20px
+        );
+    background-size: 35px 35px;
+    background-repeat: repeat;
+}
+
+.style-dark{
+    background: repeating-linear-gradient(
+        45deg,
+        #13303a,
+        #13303a 10px,
+        #0d2126 10px,
+        #0d2126 20px
+        );
+    background-size: 35px 35px;
+    background-repeat: repeat;
+}
+
+.wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+
+}
+.wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+    vertical-align: middle;
+}
+
+.box{	
+    background: rgba(0,0,0,.8);
+    box-shadow: 0 0 2rem rgba(0,0,0,.5);
+}
+
+.box-inner{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.open{
+    margin-bottom: 1.5rem;
+}
+
+input#address{
+    width:100%;
+    max-width: 300px;
+    margin-top: 1rem;
+    box-sizing : border-box;
+    height: 30px;
+}
+
+input#button{
+    margin-top: 3px;
+    width:100%;
+    max-width: 300px;
+    color: white;
+    background-color: rgba(36,110,137,.5);
+    border: 1px solid #388FA3;
+    height: 30px;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+}
+
+input#button:hover{
+    background-color: #388FA3;
+    border: 2px solid #246E89;
+}
+
+h1::before,h2::before,h1::after,h2::after{
+    content: " ∙ ";
+}
+
+h1{
+    margin: 0 5px;
+    text-transform: uppercase;
+    line-height: 100%;
+    color: #eee;
+}
+
+h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: inline;
+}
+
+h3{ display: inline;}
+
+#trash > a > i, #latestLink > a {
+    color: #aaa;
+    font-size: 15px;
+}
+
+p{
+    margin: 5px;
+}
+
+p#latestLink a, footer a{
+    color: #eee;
+    text-decoration: none;
+}
+
+p#shrug{
+    color: #666;
+    transition-duration: 0.5s;
+}
+
+p#shrug:hover{
+    color: #ccc;
+}
+
+p#latestLink img, footer i.fa, #latestLink > i{
+    margin-right: 5px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0 2px 0;
+    background: rgba(0,0,0,.2);
+}
+
+.button-edge{
+    z-index: 1;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: auto;
+    bottom: auto;
+}
+
+.button-style{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,.5);
+}
+
+.style-light .button-style{
+    border: 1px solid black;
+    background: #e5faff;
+    color: black;	
+}
+
+.style-dark .button-style{
+    border: 1px solid white;
+    background: #35393a;
+    color: white;	
+}
+
+.button-style:hover{
+    transition-duration: 0.2s;
+}
+
+.style-light .button-style:hover{
+    background: #2e3638;
+    color: white;
+    border: 1px solid white;
+}
+
+.style-dark .button-style:hover{
+    background: #e5faff;
+    color: black;
+    border: 1px solid black;
+}
+
+.warning-container{
+    width: 100%;
+    background: #ff5c47;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.warning{
+    color: white;
+    text-align: center;
+    padding: 10px 60px 10px 60px;
+    font-size: 20px;
+}
+
+.warning > p{
+    margin: 0;
+}
+
+.warning > p > a{
+    color: black;
+    text-decoration: none;
+}
+
+p#fornow{
+    font-size: 12px;
+    color: #eee;
+    text-transform: none;
+    margin: -8px 0 0 0;
+}
