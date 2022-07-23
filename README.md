@@ -1,6 +1,6 @@
 ![image](img/cover.png)
 
-https://markspl.github.io
+https://markspl.github.io/popup-window-tool/
 
 # popup-window-tool
 Tool to open desired webpage on minimal popup window.
